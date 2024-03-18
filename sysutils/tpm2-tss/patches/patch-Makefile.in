@@ -1,0 +1,26 @@
+$NetBSD$
+
+Make systemd files specific to Linux targets
+
+--- Makefile.in.orig	2023-01-23 18:39:54.000000000 +0000
++++ Makefile.in
+@@ -11459,7 +11459,7 @@ TESTS_LIBADD = $(lib_LTLIBRARIES) $(libt
+ 
+ ### Distribution files ###
+ # Add udev rule
+-udevrules_DATA = dist/tpm-udev.rules
++@HOSTOS_LINUX_TRUE@udevrules_DATA = dist/tpm-udev.rules
+ 
+ # pkg-config setup. pc-file declarations happen in the corresponding modules
+ pkgconfig_DATA = lib/tss2-mu.pc lib/tss2-tctildr.pc $(am__append_42) \
+@@ -11647,8 +11647,8 @@ src_tss2_rc_libtss2_rc_la_SOURCES = $(TS
+ ### TCG TSS FAPI spec library ###
+ @FAPI_TRUE@fapiconfdir = @sysconfdir@/tpm2-tss
+ @FAPI_TRUE@fapiconf_DATA = fapi-config.json
+-@FAPI_TRUE@sysusers_DATA = dist/sysusers.d/tpm2-tss.conf
+-@FAPI_TRUE@tmpfiles_DATA = tpm2-tss-fapi.conf
++@HOSTOS_LINUX_TRUE@@FAPI_TRUE@sysusers_DATA = dist/sysusers.d/tpm2-tss.conf
++@HOSTOS_LINUX_TRUE@@FAPI_TRUE@tmpfiles_DATA = tpm2-tss-fapi.conf
+ @FAPI_TRUE@fapiprofilesdir = @sysconfdir@/tpm2-tss/fapi-profiles
+ @FAPI_TRUE@fapiprofiles_DATA = dist/fapi-profiles/P_RSA2048SHA256.json \
+ @FAPI_TRUE@                    dist/fapi-profiles/P_ECCP256SHA256.json

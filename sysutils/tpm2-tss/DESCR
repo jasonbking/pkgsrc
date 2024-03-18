@@ -1,0 +1,18 @@
+This implements the Trusted Computing Group's (TCG) TPM2 Software Stack (TSS).
+This stack consists of the following layers from top to bottom:
+
+    * Feature API (FAPI) as described in the TCG Feature API (FAPI)
+      Specification along with TCG TSS 2.0 JSON Data Types and Policy Language
+      Specification.
+
+    * Enhanced System API (ESAPI) as described in the TCG TSS 2.0 Enhanced
+      System API (ESAPI) Specification.
+
+    * System API (SAPI) as described in the TCG TSS 2.0 System Level API (SAPI)
+      Specification.
+
+    * Marshaling/Unmarshaling (MU) as described in the TCG TSS 2.0
+      Marshaling/Unmarshaling API Specification.
+
+    * TPM Command Transmission Interface (TCTI) as described in the TCG TSS 2.0
+      TPM Command Transmission Interface (TCTI) API Specification.

@@ -1,0 +1,2 @@
+@comment $NetBSD$
+lib/udev/rules.d/tpm-udev.rules
