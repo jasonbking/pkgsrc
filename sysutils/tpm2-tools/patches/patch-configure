@@ -1,0 +1,24 @@
+$NetBSD$
+
+Fix portability issues
+
+--- configure.orig	2024-03-18 05:31:07.408250953 +0000
++++ configure
+@@ -14848,7 +14848,7 @@ fi
+ 
+ 
+ # use the true program to avoid failing hard
+-if test "x$with_efivar" == "xauto"
++if test "x$with_efivar" = "xauto"
+ then :
+ 
+ pkg_failed=no
+@@ -14932,7 +14932,7 @@ fi
+ 
+ done
+ fi
+-elif test "x$with_efivar" == "xyes"
++elif test "x$with_efivar" = "xyes"
+ then :
+ 
+ pkg_failed=no

@@ -1,0 +1,8 @@
+$NetBSD$
+
+BLAKE2s (tpm2-tools-5.6.tar.gz) = b4b9b57801eb2366cd76322c31b300ca0198afc2a45ecfb96f892148ed59fd3d
+SHA512 (tpm2-tools-5.6.tar.gz) = 14216f29ed3ecca5fbe356ed3744c8b6b25a62ff11b2aed596d11101328c8bfd29a02f6ca5a218f9a4477a5e9648c50f0ae96e71de0b4ff5ea1f98ebeeb73cd7
+Size (tpm2-tools-5.6.tar.gz) = 1266731 bytes
+SHA1 (patch-configure) = b9444c985e7f8f3f401a9100f57da23e9296e73c
+SHA1 (patch-tools_fapi_tss2__template.c) = b8ed5227771b9180940b30a9029ef81eea959782
+SHA1 (patch-tools_tpm2__tool.c) = e39aa0a5e2da51ca664bf62a928d1c8b5e2f0ef1
