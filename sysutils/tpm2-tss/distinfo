@@ -1,0 +1,15 @@
+$NetBSD$
+
+BLAKE2s (tpm2-tss-4.0.1.tar.gz) = 73361a244c47666e4db5c2b95ec93558c492fcd1dbdafde723f4a925b6ea985c
+SHA512 (tpm2-tss-4.0.1.tar.gz) = ed6ddc52cb0e8c1082a4bb001e1225eb9905fd2380da88db5fd69ff5b5d9d43a93eb67b634e49d53eb5d586832da3aef2c4c7e5f18d51bb730481f8913319d7d
+Size (tpm2-tss-4.0.1.tar.gz) = 1787139 bytes
+SHA1 (patch-Makefile.in) = 7799c78d4b1c633f9a59aaee6675de21f1fbb361
+SHA1 (patch-configure) = c9b3d2e82b6d9fe944bd934f9c07c9fe3743d13a
+SHA1 (patch-src_tss2-fapi_fapi__crypto.c) = 7dd20ea4a2e3b0fb1334c1061bf20e745fea8696
+SHA1 (patch-src_tss2-fapi_ifapi__io.c) = e660d4343d1f9a59000949c360ae35a797e5497c
+SHA1 (patch-src_tss2-fapi_ifapi__profiles.c) = bb3d311fc005828368ab6cbcd9d225117b7243b4
+SHA1 (patch-src_tss2-tcti_tcti-cmd.c) = c504bf2aacefad531b4851539541ee80eb1c7de1
+SHA1 (patch-src_tss2-tcti_tcti-device.c) = 113ae95d4eeb63389eaa3a662238ff527fbe0f8f
+SHA1 (patch-src_tss2-tcti_tcti-pcap-builder.c) = ec7a2a1e026cf8304e44050ebbb088355102a7c0
+SHA1 (patch-src_tss2-tcti_tctildr-dl.c) = 4c88140590cd68b8dd9bd1a3d24cb8e6631cf68e
+SHA1 (patch-src_tss2-tcti_tctildr-nodl.c) = ae2b902f0a8ce8c680bf1001bed0116bebd48cf1
