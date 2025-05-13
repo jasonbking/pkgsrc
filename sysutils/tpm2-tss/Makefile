@@ -1,10 +1,10 @@
 # $NetBSD$
 
-DISTNAME=	tpm2-tss-4.0.1
+DISTNAME=	tpm2-tss-4.1.3
 CATEGORIES=	sysutils
 MASTER_SITES=	${MASTER_SITE_GITHUB:=tpm2-software/}
 GITHUB_PROJECT=	tpm2-tss
-GITHUB_RELEASE=	4.0.1
+GITHUB_RELEASE=	4.1.3
 
 MAINTAINER=	jason.brian.king@gmail.com
 HOMEPAGE=	https://github.com/tpm2-software/tpm2-tss/
