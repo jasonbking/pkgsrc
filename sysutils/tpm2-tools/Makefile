@@ -1,10 +1,10 @@
 # $NetBSD$
 
-DISTNAME=	tpm2-tools-5.6
+DISTNAME=	tpm2-tools-5.7
 CATEGORIES=	sysutils
 MASTER_SITES=	${MASTER_SITE_GITHUB:=tpm2-software/}
 GITHUB_PROJECT=	tpm2-tools
-GITHUB_RELEASE=	5.6
+GITHUB_RELEASE=	5.7
 
 MAINTAINER=	jason.brian.king@gmail.com
 HOMEPAGE=	https://github.com/tpm2-software/tpm2-tools/
