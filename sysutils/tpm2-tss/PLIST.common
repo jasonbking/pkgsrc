@@ -9,6 +9,7 @@ include/tss2/tss2_sys.h
 include/tss2/tss2_tcti.h
 include/tss2/tss2_tcti_cmd.h
 include/tss2/tss2_tcti_device.h
+include/tss2/tss2_tcti_i2c_helper.h
 include/tss2/tss2_tcti_mssim.h
 include/tss2/tss2_tcti_pcap.h
 include/tss2/tss2_tcti_spi_helper.h
@@ -23,6 +24,7 @@ lib/libtss2-rc.la
 lib/libtss2-sys.la
 lib/libtss2-tcti-cmd.la
 lib/libtss2-tcti-device.la
+lib/libtss2-tcti-i2c-helper.la
 lib/libtss2-tcti-mssim.la
 lib/libtss2-tcti-pcap.la
 lib/libtss2-tcti-spi-helper.la
@@ -36,6 +38,7 @@ lib/pkgconfig/tss2-rc.pc
 lib/pkgconfig/tss2-sys.pc
 lib/pkgconfig/tss2-tcti-cmd.pc
 lib/pkgconfig/tss2-tcti-device.pc
+lib/pkgconfig/tss2-tcti-i2c-helper.pc
 lib/pkgconfig/tss2-tcti-mssim.pc
 lib/pkgconfig/tss2-tcti-pcap.pc
 lib/pkgconfig/tss2-tcti-spi-helper.pc
@@ -52,9 +55,17 @@ man/man5/fapi-config.5
 man/man5/fapi-profile.5
 man/man7/tss2-tcti-cmd.7
 man/man7/tss2-tcti-device.7
+man/man7/tss2-tcti-i2c-ftdi.7
+man/man7/tss2-tcti-i2c-helper.7
 man/man7/tss2-tcti-mssim.7
+man/man7/tss2-tcti-spi-ftdi.7
+man/man7/tss2-tcti-spi-helper.7
+man/man7/tss2-tcti-spi-ltt2go.7
+man/man7/tss2-tcti-spidev.7
 man/man7/tss2-tcti-swtpm.7
 man/man7/tss2-tctildr.7
 share/examples/tpm2-tss/fapi-config.json
 share/examples/tpm2-tss/fapi-profiles/P_ECCP256SHA256.json
+share/examples/tpm2-tss/fapi-profiles/P_ECCP384SHA384.json
 share/examples/tpm2-tss/fapi-profiles/P_RSA2048SHA256.json
+share/examples/tpm2-tss/fapi-profiles/P_RSA3072SHA384.json

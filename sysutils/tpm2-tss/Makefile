@@ -22,7 +22,9 @@ PKG_SYSCONFSUBDIR=	tpm2-tss
 EGDIR=			${PREFIX}/share/examples/tpm2-tss
 CONF_FILES=		${EGDIR}/fapi-config.json ${PKG_SYSCONFDIR}/fapi-config.json
 CONF_FILES+=		${EGDIR}/fapi-profiles/P_ECCP256SHA256.json ${PKG_SYSCONFDIR}/fapi-profiles/P_ECCP256SHA256.json
+CONF_FILES+=		${EGDIR}/fapi-profiles/P_ECCP384SHA384.json ${PKG_SYSCONFDIR}/fapi-profiles/P_ECCP384SHA384.json
 CONF_FILES+=		${EGDIR}/fapi-profiles/P_RSA2048SHA256.json ${PKG_SYSCONFDIR}/fapi-profiles/P_RSA2048SHA256.json
+CONF_FILES+=		${EGDIR}/fapi-profiles/P_RSA3072SHA384.json ${PKG_SYSCONFDIR}/fapi-profiles/P_RSA3072SHA384.json
 MAKE_DIRS+=		${PKG_SYSCONFDIR}/fapi-profiles
 
 INSTALL_MAKE_FLAGS=	${MAKE_FLAGS} fapiconfdir=${EGDIR} fapiprofilesdir=${EGDIR}/fapi-profiles
@@ -43,6 +45,7 @@ PKGCONFIG_OVERRIDE+=	lib/tss2-rc.pc.in
 PKGCONFIG_OVERRIDE+=	lib/tss2-sys.pc.in
 PKGCONFIG_OVERRIDE+=	lib/tss2-tcti-cmd.pc.in
 PKGCONFIG_OVERRIDE+=	lib/tss2-tcti-device.pc.in
+PKGCONFIG_OVERRIDE+=	lib/tss2-tcti-i2c-helper.pc.in
 PKGCONFIG_OVERRIDE+=	lib/tss2-tcti-libtpms.pc.in
 PKGCONFIG_OVERRIDE+=	lib/tss2-tcti-mssim.pc.in
 PKGCONFIG_OVERRIDE+=	lib/tss2-tcti-pcap.pc.in
